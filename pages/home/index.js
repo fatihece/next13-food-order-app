@@ -1,10 +1,11 @@
+import React from "react";
 import Head from "next/head";
-// import Header from "../../Header.jsx";
-// import Home from "../../pages/home/index.js";
-import Header from "../../components/layout/Header";
+import Header from "../components/layout/Header";
+// import Home from "./home";
+
 export default function Index() {
   return (
-    <main>
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,6 +17,7 @@ export default function Index() {
         />
       </Head>
       <Header />
-    </main>
+      {/* <Home /> */}
+    </div>
   );
 }
