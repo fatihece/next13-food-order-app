@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <main>
       <Head>
-        <title>Create Next App</title>
+        <title>Food Order App</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
