@@ -16,11 +16,11 @@ body {
 }
 
 .btn-primary {
-  @apply text-white px-[30px] py-[8px] rounded-3xl bg-primary cursor-pointer hover:opacity-70 transition-all disabled:opacity-50 disabled:cursor-not-allowed;
+  @apply cursor-pointer rounded-3xl bg-primary px-[30px] py-[8px] text-white transition-all hover:opacity-70 disabled:cursor-not-allowed disabled:opacity-50;
 }
 
 .slick-dots {
-  @apply !flex justify-start w-full;
+  @apply !flex w-full justify-start;
 }
 
 .slick-dots li {
@@ -28,7 +28,7 @@ body {
 }
 
 .slick-dots .slick-active div {
-  @apply bg-primary scale-150;
+  @apply scale-150 bg-primary;
 }
 
 .slick-dots div {
