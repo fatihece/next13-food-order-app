@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../../components/layout/Header";
 import Carousel from "../../components/Carousel";
 import Campaigns from "../../components/Campaigns";
+import MenuWrapper from "../../components/product/MenuWrapper";
 export default function Index() {
   return (
     <main>
@@ -18,6 +19,7 @@ export default function Index() {
       <Header />
       <Carousel />
       <Campaigns />
+      <MenuWrapper />
     </main>
   );
 }
