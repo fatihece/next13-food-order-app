@@ -44,11 +44,15 @@ const Test = () => {
         <div className="my-6 flex justify-center gap-x-4 md:justify-start">
           <label className="flex items-center gap-x-1">
             <input type="checkbox" className="h-5 w-5 accent-primary" />
-            <span className="text-sm font-semibold">ketçap</span>
+            <span className="text-sm font-semibold">Ketchup</span>
           </label>
           <label className="flex items-center gap-x-1">
             <input type="checkbox" className="h-5 w-5 accent-primary" />
-            <span className="text-sm font-semibold">ketçap</span>
+            <span className="text-sm font-semibold">Mayonnaise</span>
+          </label>
+          <label className="flex items-center gap-x-1">
+            <input type="checkbox" className="h-5 w-5 accent-primary" />
+            <span className="text-sm font-semibold">Spicy</span>
           </label>
         </div>
         <button className="btn-primary">Add to Cart</button>
