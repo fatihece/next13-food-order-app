@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Title from "../../../components/ui/Title";
 
-const Test = () => {
+const Index = () => {
   return (
     <div className="flex h-screen flex-wrap items-center gap-20 py-20 ">
       <div className="relative mx-20 h-[80%] w-[80%] md:flex-1">
@@ -61,4 +61,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Index;
