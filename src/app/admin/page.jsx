@@ -5,10 +5,10 @@ import { AiFillHome } from "react-icons/ai";
 import { FaKey } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
+import { FaProductHunt } from "react-icons/fa";
 import Account from "../../../components/profile/Account";
 import { useState } from "react";
 import Password from "../../../components/profile/Password";
-import Order from "../order/page";
 const Profile = () => {
   const [tabs, setTabs] = useState(0);
   return (
@@ -16,13 +16,13 @@ const Profile = () => {
       <div className="w-100 flex-shrink-0 lg:w-80">
         <div className="relative flex flex-col items-center border border-b-0 px-10 py-5">
           <Image
-            src="/images/client2.jpg"
+            src="/images/admin.png"
             alt=""
             width={100}
             height={100}
             className="rounded-full"
           />
-          <b className="mt-1 text-2xl">John Doe</b>
+          <b className="mt-1 text-2xl">Admin</b>
         </div>
         <ul className="text-center font-semibold">
           <li
@@ -31,8 +31,8 @@ const Profile = () => {
             }`}
             onClick={() => setTabs(0)}
           >
-            <AiFillHome />
-            <button className="ml-1 ">Account</button>
+            <FaProductHunt />
+            <button className="ml-1 ">Products</button>
           </li>
           <li
             className={`flex w-full cursor-pointer items-center justify-center border p-3 transition-all hover:bg-primary hover:text-white ${
@@ -65,7 +65,6 @@ const Profile = () => {
       </div>
       {tabs === 0 && <Account />}
       {tabs === 1 && <Password />}
-      {tabs === 2 && <Order />}
     </div>
   );
 };
